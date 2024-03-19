@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AUCGPA-CALC</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hotspot Technologies presents anna university 2017 regulation cgpa calculator">
+    <meta name="keywords" content="anna university cgpa calculator,cgpa calculator,2017 regulation cgpa calculator,gpa calculator,anna university gpa calculator,Hotspot Technologies presents anna university 2017 regulation cgpa calculator,Hotspot Technologies">
+    <meta name="author" content="V Mahamanimaran">
+    <link rel="shortest icon" href="./img/annauniv.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/contents.css" type="text/css" />
+    <script src="./js/calctable.js"></script>
+    <script src="./js/cgpacalc.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6083918818898969" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="outer">
+
+        <header class="header order-last" id="tm-header">
+
+            <nav class="navbar" style="background: rgba(4, 16, 49, 0.562); color: rgb(10, 10, 114);">
+                <figure>
+                    <img class="log" style="margin-left:10%;" src="./img/annauniv.jpg"><br>
+                    <br>
+                    <figcaption class="font" style="font-size: 16px;margin-left: 70px;">INFO:
+                        <BR>This cgpa calculator is applicable for all anna university affiliated and autonomous colleges </figcaption>
+                </figure>
+
+
+
+                <ul class="navbar-nav" style="margin-bottom: 500px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-1"><span class="icn"><i class="fas fa-2x fa-air-freshener"></i></span>Cgpa Calculator</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-4"><span class="icn"><i class="far fa-2x fa-comments"></i></span>About</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <button class="navbar-button collapsed" type="button">
+            <span class="menu_icon">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+        </button>
+
+        <main id="content-box" class="order-first">
+            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-2-bg.jpg" id="section-1">
+
+                <div class="container">
+                    <h5 class="head" style="color: rgb(8, 42, 117);">AU CGPA CALCULATOR</h5>
+                    <div class="course col-1" id="hel">
+                        <br>
+                        <p class="font1">ANNA UNIVERSITY CGPA CALCULATOR</p>
+                        <p class="font1">2017 REGULATIONS</p>
+
+                        <p class="font">Select Department</p>
+
+                        <select id="dept">
+                                    <!-- <option selected disabled hidden>Select de/optio> -->
+                                    <option style="text-align: center;">select here</option>
+                                    <option>Computer_science_engineering</option>
+                                    <option>Electronic_Communication_Engineering</option>
+                                    <option>Information_Technology</option>
+                                    <option>Mechanical_Engineering</option>
+                                    <option>Electrical_Electronic_Engineering</option>
+                                    <option>Civil_Engineering</option>
+                                </select>
+                        <p class="font">Select Semester</p>
+
+                        <select id="sem">
+                                    <!-- <option selected disabled hidden>Select semester</option> -->
+                                    <option style="text-align: center;">select here</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                </select><br>
+                        <button onclick="move()" id="mov" class="bt" style="font-family:serif;">Check gpa</button>
+                        <p class="font1">click the below button to calculate CGPA</p>
+                        <button onclick="opn();" class="bt" style="font-family:serif;">CGPA</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
+    <section class="gallery-section section parallax-window" data-parallax="scroll" data-image-src="img/section-3-bg.jpg" id="section-3">
+
+
+        <div class="table-container" id="cgpa" style="display: none;">
+            <table class="table">
+                <thead>
+
+                    <tr>
+                        <th>semester</th>
+                        <th>credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                    <tr>
+                        <td><input type="number" id="s1" placeholder="sem1 gpa"></td>
+                        <td><input type="number" id="cr1" placeholder="sem1 credits"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="number" id="s2" placeholder="sem2 gpa"></td>
+                        <td><input type="number" id="cr2" placeholder="sem2 credits"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="number" id="s3" placeholder="sem3 gpa"></td>
+                        <td><input type="number" id="cr3" placeholder="sem3 credits"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="number" id="s4" placeholder="sem4 gpa"></td>
+                        <td><input type="number" id="cr4" placeholder="sem4 credits"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="number" id="s5" placeholder="sem5 gpa"></td>
+                        <td><input type="number" id="cr5" placeholder="sem5 credits"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="number" id="s6" placeholder="sem6 gpa"></td>
+                        <td><input type="number" id="cr6" placeholder="sem6 credits"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="number" id="s7" placeholder="sem7 gpa"></td>
+                        <td><input type="number" id="cr7" placeholder="sem7 credits"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="number" id="s8" placeholder="sem8 gpa"></td>
+                        <td><input type="number" id="cr8" placeholder="sem8 credits"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="res" value="submit" onClick="p1();"></button>
+                        </td>
+                        <td><input type="button" class="res" value="cancel" onClick="c1();"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: rgb(14, 46, 105);background-color: rgb(204, 204, 207);">RESULT</td>
+                        <td><span id="result2"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="semester" class="col-5"></div>
+        <div id="myModal" class="modal"></div>
+        <div class="modal-content" id="res" style="display:none;">
+            <div class="modal-header">
+                <span class="close" onclick="clos()">X</span>
+                <h2 class="font">CGPA</h2>
+            </div>
+            <div class="modal-body">
+                <p style="color: black; font-family: 'Times New Roman', Times, serif;font-style:oblique;">Your gpa is calculated below </p>
+
+                <div id="result"></div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="contact-section section" id="section-4">
+        <div class="container">
+            <div class="title">
+                <h3>About Us</h3>
+                <p class="font">We are here to create the new tools and softwares applications.</p><br>
+                <p class="font" style="font-size: 140%;">Founder: <span style="text-decoration: underline;">V Mahamanimaran</span></p>
+                <p class="font">Site Developed by<br><span style="text-decoration: underline;">V Mahamanimaran</span></p>
+                <p class="font">Follow us </p>
+                <div class="col-lg-4 col-md-6 mb-4 contact-details">
+                    <div class="tm-contact-item-inner-2">
+
+                        <ul class="font-weight-light">
+                            <li>
+                                <span class="icn"><i class="fas fa-globe-asia" style="color:rgb(10, 20, 49);"></i></span>
+                                <a href="https://www.instagram.com/s_and_h_designz/" style="color: rgb(0, 0, 0);"><b>S&H designs</b></a>
+                            </li>
+                            <p style="font-style:oblique;
+                                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 120%;">Any queries / for new projects contact us</p>
+                            <li>
+                                <span class="icn"><i class="fas fa-at" style="color: rgb(10, 20, 49);"></i></span>
+                                <a href="#" style="color: rgb(0, 0, 0);"><b>mahamanimaranvanniaraj@gmail.com</b></a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+    </section>
+    </main>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+
+</html>
